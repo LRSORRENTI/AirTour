@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,700,900&display=swap"
+      href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -26,18 +26,18 @@
             <div class="line line-2"></div>
           </div>
           <div class="nav-list">
-            <a href="#" class="nav-link center">Home</a>
-            <a href="#" class="nav-link center">Tours</a>
-            <a href="#" class="nav-link center">About Us</a>
+            <a href="#main-home" class="nav-link center">Home</a>
+            <a href="#our-tours" class="nav-link center">Tours</a>
+            <a href="#testimonials" class="nav-link center">Testimonials</a>
             <a href="#" class="nav-link center">Offer</a>
-            <a href="#" class="nav-link center">Contact</a>
+            <a href="#contact-section" class="nav-link center">Contact</a>
           </div>
         </nav>
       </div>
       <!-- End of Navbar -->
 
       <!-- Header -->
-      <header class="header center">
+      <header class="header center" id="main-home">
         <div class="header-text">
           <h1 class="heading">Skyward we go</h1>
           <p class="header-paragraph">
@@ -65,8 +65,8 @@
       <!-- End of Header -->
 
       <!-- Popular tours -->
-      <section class="popular-tours">
-        <h1 class="popular-tours-heading">The Most Popular Tours</h1>
+      <section class="popular-tours" id="our-tours">
+        <h1 class="popular-tours-heading">Our Most Popular Tours</h1>
         <div class="cards-wrapper">
           <div class="card">
             <div class="front-side">
@@ -141,8 +141,39 @@
       </section>
       <!-- End of Popular tours -->
 
+      <section class="about-us" id="about-us">
+        <h1 class="popular-tours-heading">About Us</h1>
+        <div class="about-us-content">
+          <div class="about-us-text">
+            <p>
+              Welcome to AirTour, where your adventure begins in the skies! Our
+              passion for hot air ballooning is unmatched, and we strive to provide
+              a breathtaking and unforgettable experience for all our guests. From
+              the moment you take off, you'll be treated to stunning panoramic
+              views, vibrant landscapes, and the serene beauty of floating above it
+              all.
+            </p>
+            <p class="about-us-p-2">
+              Our team of experienced pilots and dedicated staff ensure your safety
+              and comfort, making your journey as smooth and enjoyable as possible.
+              Whether you're celebrating a special occasion or seeking a new
+              adventure, AirTour promises to deliver a memorable and magical
+              experience.
+            </p>
+            <p>
+              Join us for an adventure that you'll cherish forever. At AirTour, we
+              believe in creating memories that last a lifetime.
+            </p>
+          </div>
+          <div class="about-us-image">
+            <img src="/images/bg-2.jpg" alt="Hot air balloons over a beautiful landscape">
+          </div>
+        </div>
+      </section>
+      
+
       <!-- Stories -->
-      <section class="stories">
+      <section class="stories" id="testimonials">
         <div class="video-container">
           <!-- <video class="bg-video" autoplay muted loop>
             <source src="images/video.mp4" type="video/mp4" />
@@ -179,7 +210,7 @@
               />
               <div class="story-text">
                 <h1 class="story-heading">
-                    An Unforgettable Experience!
+                    An Unforgettable Experience
                 </h1>
                 <p class="story-paragraph">
                     The hot air balloon ride was absolutely breathtaking. The views were
@@ -217,7 +248,7 @@
       <!-- End of Stories -->
 
       <!-- Contact -->
-      <section class="contact">
+      <section class="contact" id="contact-section">
         <h1 class="contact-heading">Contact Us</h1>
         <form class="contact-form center">
           <div class="input-group">
@@ -257,15 +288,16 @@
         </form>
       </section>
       <!-- End of Contact -->
+  
 
       <!-- Footer -->
       <footer class="footer">
         <div class="footer-list">
-          <a href="#" class="footer-link">Home</a>
-          <a href="#" class="footer-link">Tours</a>
-          <a href="#" class="footer-link">About Us</a>
+          <a href="#main-home" class="footer-link">Home</a>
+          <a href="#our-tours" class="footer-link">Tours</a>
+          <a href="#testimonials" class="footer-link">Testimonials</a>
           <a href="#" class="footer-link">Offer</a>
-          <a href="#" class="footer-link">Contact</a>
+          <a href="#contact-section" class="footer-link">Contact</a>
         </div>
         <p class="footer-paragraph">
           Copyright &copy; AirTour All Rights Reserved
