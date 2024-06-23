@@ -8,8 +8,8 @@ document.querySelector(".open-navbar-icon").addEventListener("click", () => {
 document.querySelector(".close-navbar-icon").addEventListener("click", () => {
   document.querySelector(".container").classList.remove("change");
 });
-
-const colors = ["#6495ed", "#7fffd4", "#ffa07a", "#f08080", "#afeeee"];
+const colors = ["#C7F0ED", "#DCF8F7", "#FAFFFA", "#DCF8F7", "#C7F0ED"]
+// const colors = ["#6495ed", "#7fffd4", "#ffa07a", "#f08080", "#afeeee"];
 let i = 0;
 
 Array.from(document.querySelectorAll(".nav-link")).forEach(item => {
