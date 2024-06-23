@@ -312,9 +312,6 @@ html {
 /* End of Header */
 
 /* About us section */
-
-/* General Styles */
-/* General Styles */
 .about-us {
   width: 100%;
   padding: 4rem 2rem;
@@ -323,9 +320,9 @@ html {
 }
 
 .about-us-heading {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 2rem;
+  font-size: clamp(3rem, 5vw, 5.5rem);
+  color: #2b81e4;
+  margin-bottom: 5rem;
 }
 
 .about-us-content {
@@ -334,18 +331,20 @@ html {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
-.about-p {
-  margin-bottom: 10px;
+.about-p, .highlight {
+  margin-bottom: 15px;
 }
 
 .about-us-text {
   max-width: 100%;
   flex: 1;
   text-align: left;
-  font-size: 2.1rem;
-  line-height: 1.6;
+  font-size: clamp(2.2rem, 2vw, 2.07rem);
+  line-height: 1.44;
   color: #555;
 }
 
@@ -354,45 +353,59 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .about-us-image img {
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  height: auto;
+  border-radius: 17px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 /* Media Queries */
-@media (min-width: 1468px) {
+@media (min-width: 768px) {
+  .about-us {
+    padding: 5rem 3rem;
+  }
+
+  .about-us-content {
+    gap: 3rem;
+  }
+
+  .about-us-text {
+    /* border: 2px solid red; */
+    max-width: 900px;
+  }
+
+  .about-us-image{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 1404px) {
   .about-us-content {
     flex-direction: row;
     gap: 4rem;
   }
 
-  .about-us-text {
-    font-size: 1.2rem;
-  }
-
-  .about-us-heading {
-    font-size: 3rem;
-  }
-}
-
-@media (min-width: 1024px) {
   .about-us {
     padding: 6rem 4rem;
   }
 
-  .about-us-heading {
-    font-size: 3.5rem;
+  .about-us-image {
+    order: 2;
   }
 
-  .about-us-text {
-    line-height: 35px;
-    font-size: 1.8rem;
+  .about-us-image img {
+    max-width: 900px;
   }
 }
-
 
 /* End of about us section */
 
