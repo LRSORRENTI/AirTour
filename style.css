@@ -611,6 +611,13 @@ html {
 .story-text {
   letter-spacing: 0.1rem;
 }
+@media (min-width: 1300px) {
+  .story-text {
+    align-items: center;
+    position: relative;
+    top: 30px;
+  }
+}
 
 .story-heading {
   font-size: 2.5rem;
