@@ -25,6 +25,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
 }
 
 .container {
@@ -35,8 +37,12 @@ html {
   border-radius: 0px;
 }
 
+
 @media only screen and (min-width: 651px) {
   .container {
+    border-radius: 30px;
+  }
+  .navbar {
     border-radius: 30px;
   }
 }
@@ -51,6 +57,8 @@ html {
   border-radius: 50%;
   cursor: pointer;
   flex-direction: column;
+  transition: 0.4s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .open-navbar-icon {
@@ -63,8 +71,17 @@ html {
 .navbar-icon .line {
   height: 0.2rem;
   width: 3.5rem;
-  background-color: var(--light-grey-color);
+  background-color:#6999d1;
+  /* transition: 0.4s ease-in-out; */
+  /* background-color: var(--light-grey-color); */
 }
+.navbar-icon:hover{
+  opacity: 75%;
+  /* background-color: rgb(236, 236, 236); */
+  /* transition: 0.4s ease-in-out; */
+  box-shadow: none;
+}
+
 
 .open-navbar-icon .line {
   margin: 0.3rem 0;
@@ -416,6 +433,8 @@ html {
   position: relative;
   z-index: 10;
   opacity: 0.9;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
   transition: opacity 0.4s, transform 0.4s, box-shadow 0.4s;
 }
 
@@ -461,6 +480,8 @@ html {
   border-radius: 0.8rem;
   box-shadow: 0 2rem 4rem #777;
   flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
   transform: translateZ(-5rem) translateX(3rem);
   opacity: 0.5;
   transition: opacity 0.4s, transform 0.4s, box-shadow 0.4s;
@@ -551,6 +572,8 @@ html {
   width: 70%;
   box-shadow: 0 2rem 5rem rgba(51, 51, 51, 0.4);
   transform: skewX(20deg);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
 }
 
 .story {
@@ -593,6 +616,7 @@ html {
   background-size: cover;
   animation: contact-bg 35s infinite;
   opacity: 0.7;
+  
 }
 
 .contact-heading {
@@ -614,6 +638,8 @@ html {
   border-radius: 0.5rem;
   box-shadow: 0 1rem 3rem #000;
   padding: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
 }
 
 .input-group {
@@ -727,8 +753,10 @@ html {
 }
 
 .footer-link:hover {
-  transform: rotate(-10deg);
-  box-shadow: 0 2rem 3rem #000;
+  /* transform: rotate(-10deg); */
+  /* box-shadow: 0 2rem 3rem #000; */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
 }
 
 .footer-paragraph {
